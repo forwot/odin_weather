@@ -5,14 +5,14 @@ async function getWeatherData(location) {
 
   try {
     const response = await fetch(url);
+    if (!response.ok) throw new Error("Location not found");
+
     const data = await response.json();
-
     return data;
-
   } catch (error) {
     console.log("api fetch error");
-    
-    return error
+
+    throw error;
   }
 }
 
