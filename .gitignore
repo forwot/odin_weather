@@ -1,5 +1,6 @@
-# .gitignore
+.gitignore
 dist
 node_modules
 .DS-Store
 .env
+API_KEY = '9PPUB46YLF2FKAJL92DRYZ769'
